@@ -168,7 +168,7 @@ void ftrace_likely_update(struct ftrace_branch_data *f, int val, int expect);
 #define OPTIMIZER_HIDE_VAR(var) barrier()
 #endif
 
-#include <uapi/linux/types.h>
+#include <linux/types.h>
 
 static __always_inline void data_access_exceeds_word_size(void)
 #ifdef __compiletime_warning
