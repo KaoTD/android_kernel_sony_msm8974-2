@@ -2218,7 +2218,7 @@ enqueue_task_fair(struct rq *rq, struct task_struct *p, int flags)
 	}
 
 	if (!se)
-		inc_nr_running(rq);
+/*		inc_nr_running(rq);*/
 	hrtick_update(rq);
 }
 
